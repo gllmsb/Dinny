@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Smooch+Sans:wght@300&family=Sofia+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Itim&family=Sofia+Sans+Condensed:wght@300&display=swap');
+
+:root {
+    --light: #ddd;
+    --medium: #999;
+    --dark: #333;
+    --black: #212121;
+    --primary: #4ae;
+    --secondary: #ddd;
+    --danger: #bb1818;
+    --warning: #ef5400;
+    --success: #3b833b;
+    --static: #aaaaaa;
+    --active: #357baa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: var(--black);
+    color: var(--light);
+    margin: 8px;
+}
+
+/* HEADER-MAIN */
+
+.header-main {
+    position: relative;
+    margin-bottom: -0.5vw;
+}
+/* HEADER IMG */
+.header-main img {
+    width: 100%;
+    height: auto;
+}
+/* HEADER HGROUP */
+.header-main hgroup {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--light);
+    box-sizing: border-box;
+    border: 1vw solid #000;
+    overflow: hidden;
+}
+
+hgroup {
+    display: block;
+}
+/* HEADER H1 */
+.header-main h1 {
+    font-size: 22vw;
+    line-height: 100%;
+    margin: 0.7rem;
+    color: var(--danger);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 span {
+    color: var(--black);
+}
+
+/* NAV-MAIN */
+@media (min-width: 1200px) {
+    .nav-main {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 800px) {
+    .nav-main {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+.nav-main {
+    display: flex;
+    background-color: var(--dark);
+}
+
+.nav-main ul {
+   list-style: none;
+   margin: 0;
+   padding: 0px;
+   display: flex; 
+}
+
+.nav-main ul li {
+    margin-right: 10px;
+}
+
+.nav-main ul a {
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--warning);
+    transition: 500ms;
+}
+
+.nav-main ul li a:hover {
+    background-color: var(--black);
+    color: var(--secondary);
+}
+
+.nav-main ul:last-child {
+    margin-left: auto;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.nav-main ul:last-child li {
+    margin-right: 0;
+}
+
+.nav-main ul:last-child li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 3;
+}
+
+.nav-main ul:last-child li:nth-child(1) a {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.nav-main ul:last-child li:nth-child(2) a {
+    background-color: var(--success);
+    color: var(--secondary);
+}
