@@ -24,8 +24,8 @@
             <li><a href="#gallery">Gallery</a></li>
         </ul>
         <ul>
-            <li><a href="#signIn">Sign In</a></li>
-            <li><a href="#Book">Book Table</a></li>
+            <li><a href="#signIn" onclick="openModal()">Sign In</a></li>
+            <li><a href="#Book" onclick="openModal()">Book Table</a></li>
         </ul>
     </nav>
 
@@ -218,9 +218,61 @@
             </figcaption>
         </figure>
     </section>
-    
-    
+    <footer class="footer-main">
+        <!-- FOOTER LEFT -->
+        <div>
+            <h2>Pin down Dinny</h2>
+            <img alt="" src="https://maps.googleapis.com/maps/api/js/StaticMapService.GetMapImage?1m2&amp;1i4425084&amp;2i2567711&amp;2e1&amp;3u15&amp;4m2&amp;1u626&amp;2u150&amp;5m5&amp;1e0&amp;5sda&amp;6sdk&amp;10b1&amp;12b1&amp;client=google-maps-embed&amp;token=29858" style="width: 626px; height: 150px;">
+        </div>
+        <!-- FOOTER RIGHT -->
+        <div>
+            <ul>
+                <li>
+                    <h4>Address Header</h4>
+                </li>
+                <li>Roadname, number</li>
+                <li>ZipCode City Name</li>
+                <li>
+                    <a href="tel:+4522334455" tel="+45 2233 4455">+45 2233 4455</a>
+                </li>
+                <li>
+                    <a href="mailto:Mail@dinny.com">Mail@dinny.com</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h5>Information:</h5>
+                </li>
+                <li>1234 5678 1011</li>
+                <li>CVR: 9876542123</li>
+            </ul>
+        </div>
+    </footer>
+<!-- MODAL -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Sign In</h2>
+            
+            <!-- Sign In -->
+            <form action="#" id="signInForm" class="signIn_form" onsubmit="return validateForm(event)">
+            <!-- First Name -->
+            <input type="text" placeholder="First Name" class="form__input" id="firstname">
+            <!-- Last Name -->
+            <input type="text" placeholder="Last Name" class="form__input" id="lastname">
+            <!-- Email -->
+            <input type="text" placeholder="Email" class="form__input" id="email">
+            <!-- Password -->
+            <input type="password" placeholder="Password" class="form__input" id="password">
+            <!-- Confirm password -->
+            <input type="password" placeholder="Confirm Password" class="form__input" id="confirmPassword">
+            <!-- Submit Button -->
+            <input type="submit" value="Submit" class="form__submit">
+            </form>
+            <!-- Error Message -->
+        <div id="error-message"></div>
+        </div>
 
-    
+    </div>
 </body>
 </html>
