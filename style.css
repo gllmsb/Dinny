@@ -23,7 +23,7 @@ body {
     font-family: 'Smooch Sans', sans-serif;
     background-color: var(--black);
     color: var(--light);
-    margin: 8px;
+    margin: 50px;
 }
 
 /* HEADER-MAIN */
@@ -54,7 +54,7 @@ hgroup {
 }
 /* HEADER H1 */
 .header-main h1 {
-    font-size: 22vw;
+    font-size: 12vw;
     line-height: 100%;
     margin: 0.7rem;
     color: var(--danger);
@@ -133,4 +133,148 @@ h1 span {
 .nav-main ul:last-child li:nth-child(2) a {
     background-color: var(--success);
     color: var(--secondary);
+}
+
+/* SECTION ABOUT */
+section > header:first-of-type h2 {
+    font-size: 5vw;
+    color: var(--warning);
+    margin: 0.1rem;
+    margin-left: 3rem;
+}
+
+.section-about figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.section-about figure article h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--primary);
+}
+
+.section-about article p {
+    font-size: 1.5rem;
+}
+
+.section-about article a {
+    font-size: 1.3rem;
+    color: var(--static);
+    transition: 400ms;
+}
+
+.section-about article footer {
+    text-align: right;
+}
+
+/* SECTION STAFF*/
+.section-staff {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.section-staff > header h2 {
+    font-size: 5vw;
+    color: var(--warning);
+    margin: 0.1rem;
+    margin-left: 3rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.section-staff figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+}
+
+.section-staff figure {
+    margin: 0.5rem;
+}
+
+.section-staff figure h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--primary);
+}
+
+.section-staff figure article p {
+    font-size: 1.5rem;
+}
+
+.section-staff figure article a {
+    font-size: 1.3rem;
+    color: var(--static);
+    transition: 400ms;
+}
+
+.section-staff figure article footer {
+    text-align: right;
+}
+
+.the__staff {
+    font-size: 4vw;
+    color: var(--warning);
+    margin: -2rem;
+    margin-left: 3rem;
+}
+
+/* SECTION DELIVERY */
+.section-delivery {
+    padding: 0;
+    margin: 0;
+}
+
+.delivery-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-container {
+    flex: 0 0 auto;
+    margin-right: 20px; 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    flex: 1; 
+}
+
+.text-container h3 {
+    font-size: 2rem; 
+    color: var(--primary); 
+    margin-bottom: 1rem; 
+    margin-top: -28rem;
+}
+
+.text-container p {
+    font-size: 1.5rem;
+}
+
+.the__delivery {
+    font-size: 4vw;
+    color: var(--warning);
+    margin: -2rem;
+    margin-left: 3rem;  
 }
